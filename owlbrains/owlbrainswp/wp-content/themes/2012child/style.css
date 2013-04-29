@@ -1,0 +1,350 @@
+/*
+Theme Name:     2012Child
+Description:    
+Author:         AlanSwenson
+Template:       twentytwelve
+
+(optional values you can add: Theme URI, Author URI, Version)
+*/
+
+@import url("../twentytwelve/style.css");
+
+body {
+    	color: #317393;
+	line-height: 0;
+}
+
+.site-header {
+    padding: 0px;
+}
+.site-content {
+    margin: 0;
+}
+
+#div-register { 
+	background-color: white;
+	border-color: grey;
+	border-style: solid;
+	border-width:1px;
+	background-color: #FFF;
+	padding: 10px 25px 25px 25px;
+	margin-top: 15px;
+	overflow:hidden;
+	width: 40%;
+	float: left;
+	
+}
+
+#div-nav {
+	overflow:hidden;
+	text-align: center;
+	vertical-align: baseline;
+	
+	
+	
+}
+#div-nav-ico {
+	display:inline-block;
+	vertical-align: baseline;
+	
+	
+}
+#div-nav-ico2 {
+	
+	display:inline-block;
+	vertical-align: baseline;
+	box-shadow: 0px 4px 4px -2px #232323;
+    -moz-box-shadow: 0px 4px 4px -2px #232323;
+    -webkit-box-shadow: 0px 4px 4px -2px #232323;
+	
+	
+}
+#div-nav-ico3 {
+	display:inline-block;
+	margin: 0px 40px 0px 0px;
+	vertical-align: baseline;
+	
+	
+}
+
+#main-right {
+	border-radius: 10px 10px 10px 10px; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	width: 52%;
+	float: right;
+	
+	
+	
+}
+
+#main-left {
+	border-radius: 10px 10px 10px 10px; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	width: 45%;
+	float: left;
+	padding: 10px;
+	
+	
+	
+}
+
+
+#div-step1 {
+	border-radius: 10px 10px 10px 10px; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background-color: #63d293;
+	width: 47%;
+	margin: 13px 5px 10px 5px;
+	float: left;
+	
+	
+	
+}
+#div-step2 {
+	border-radius: 10px 10px 10px 10px; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	width: 47%;
+	float: right;
+	background-color: #81d2a4;
+	margin: 13px 5px 10px 5px;
+}
+#div-step3 {
+	border-radius: 10px 10px 10px 10px; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	width: 47%;
+	float: left;
+	background-color: #8ce9b4;
+	margin: 10px 5px 10px 5px;
+}
+#div-step4 {
+	border-radius: 10px 10px 10px 10px; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	width: 47%;
+	float: right;
+	background-color: #a5e9c2;
+	margin: 10px 5px 10px 5px;
+	
+}
+#div-1 { 
+	border-color: grey;
+	border-style: solid;
+	border-width:1px;
+    	background-color: #FFF;
+	padding: 10px 15px 15px 15px;
+        text-align:center;
+	overflow:hidden;
+	
+}
+#myform br {display:none !important;}
+
+#div-ask { 
+	border-color: grey;
+	border-style: solid;
+	border-width:1px;
+    	background-color: #FFF;
+	padding: 10px 15px 15px 15px;
+	overflow:hidden;
+	
+	
+}
+#div-3 { 
+	border-color: grey;
+	border-style: solid;
+	border-width:1px;
+	background-color: #FFF;
+	padding: 0px 25px 25px 25px;
+	margin-bottom: 25px;
+        text-align:left;
+	overflow:hidden;
+	
+}
+#div-1-1 { 
+    	border-radius: 10px 10px 10px 10px; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background-color: #FFF;
+	padding: 10px 25px 25px 25px;
+	margin-bottom: 25px;
+        text-align:center;
+	overflow:hidden;
+	background-color: #8ce9b4;
+}
+#div-2 { 
+	background-color: white;
+   	margin: 0px;
+        text-align:center;
+	overflow:hidden;
+	vertical-align: baseline;
+	
+	
+}
+
+#div-4 { 
+	background-image: url('http://owlbrains.com/images/blank-nav.png');
+   	margin: 0px;
+        text-align:center;
+	overflow:hidden;
+	vertical-align: baseline;
+	box-shadow: 0 4px 4px -2px #232323;
+    -moz-box-shadow: 0 4px 4px -2px #232323;
+    -webkit-box-shadow: 0 4px 4px -2px #232323;
+	}
+
+#navbar_right { 
+	float: right;
+
+	
+}
+
+#div-1 h2{
+	font-size: 24pt;
+	margin: 0;
+}
+#div-1 h3{
+	font-size: 20pt;
+	margin: 0;
+	padding: 0;
+}
+#div-1 h4{
+	font-size: 16pt;
+	margin: 0;
+	padding: 0;
+
+}
+#table-3 {
+	
+	border-style:solid;
+	border-color: #317393;
+	background-color: #F9F9F9;
+	width: 100%;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	font-family: Arial,"Bitstream Vera Sans",Helvetica,Verdana,sans-serif;
+	color: #333;
+}
+#table-3 td, #table-3 th {
+	color: #555;
+}
+#table-3 th {
+	text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-weight: normal;
+	padding: 7px 7px 8px;
+	text-align: left;
+	line-height: 1.3em;
+	font-size: 14px;
+}
+#table-3 td {
+	font-size: 11px;
+	padding: 4px 7px 2px;
+	vertical-align: top;
+}
+
+#table-4 td {
+	font-size: 11px;
+	padding: 3px;
+	vertical-align: top;
+	border: 0px;
+}
+#table-4 tr {
+	font-size: 11px;
+	padding: 0px;
+	vertical-align: top;
+	border: 0px;
+}
+#table-3 h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	color: #dd1919;
+}
+#table-3 h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	color: #317393;
+}
+#table-3 #td-1 {
+	border-top: 0px;
+	border-left: 2px solid #EDEDED;
+	font-size: 11px;
+	padding: 4px 7px 2px;
+	vertical-align: top;
+}
+#table-3 #td-2 {
+	border-top: 0px;
+	font-size: 11px;
+	padding: 4px 7px 2px;
+	vertical-align: top;
+}
+#table-3 #td-3 {
+	border-top: 0px;
+	font-size: 11px;
+	padding: 1px;
+	vertical-align: top;
+}
+
+
+.entry-content table, .comment-content table {
+    	border: 4px solid #bfe98f;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border-collapse: separate;
+	border-spacing: 0; 
+    
+}
+
+.entry-content td, .comment-content td {
+    border-top: 2px solid #EDEDED;
+}
+
+
+
+.site-header {
+    padding: 0px 0 0;
+}
+
+.site-content article {
+    
+    border-bottom: 0px;
+    margin-bottom: 5.14286rem;
+    padding-bottom: 1.71429rem;
+    word-wrap: break-word;
+}
+footer[role="contentinfo"] {
+    border-top: 0px;
+}
+
+.entry-header .entry-title {
+    display: none;
+}
+.entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image {
+    border-radius: none !important;
+    box-shadow: none !important;
+}
+.site {
+    background: none;
+	background-color: none;
+    border: 0px solid #332F2F;
+	padding: 0px;
+}
+body.custom-background-empty .site, body.custom-background-white .site {
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0px;
+}
+
+.site-header h1 {
+	font-size: 3rem;
+    line-height: 2;
+}

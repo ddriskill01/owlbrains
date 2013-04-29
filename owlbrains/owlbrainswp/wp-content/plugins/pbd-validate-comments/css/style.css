@@ -1,0 +1,7 @@
+label.error {
+	display: block;
+	width: 50%;
+	background: #ffd2d2;
+	padding: 0 10px;
+    color: black;
+}
