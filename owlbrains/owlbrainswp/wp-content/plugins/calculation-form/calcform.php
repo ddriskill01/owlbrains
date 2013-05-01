@@ -15,7 +15,8 @@ function form_calculations() {
     if(is_page() ) {
 		wp_enqueue_script(
 			'form-calculations',
-			plugin_dir_url( __FILE__ ) . 'js/formcalculations.js'
+			plugin_dir_url( __FILE__ ) . 'js/formcalculations.js',
+            array( 'jquery-validate' ) 
 		);
 		
 	}

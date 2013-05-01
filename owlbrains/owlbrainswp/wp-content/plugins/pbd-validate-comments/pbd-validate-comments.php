@@ -17,9 +17,7 @@ function pbd_vc_scripts() {
 		wp_enqueue_script(
 			'jquery-validate',
 			plugin_dir_url( __FILE__ ) . 'js/jquery.validate.min.js',
-			array('jquery'),
-			'1.10.0',
-			true
+            array( 'jquery' ) 
 		);
 		
 		wp_enqueue_style(
@@ -28,6 +26,7 @@ function pbd_vc_scripts() {
 			array(),
 			'1.0'
 		);
+        
 	}
 }
 add_action('template_redirect', 'pbd_vc_scripts');
@@ -38,7 +37,8 @@ add_action('template_redirect', 'pbd_vc_scripts');
  */
 function pbd_vc_init() { ?>
 	<script type="text/javascript">
-		jQuery(document).ready(function($) {
+		$(document).ready(function($) {
+
             /**
             * Add Custom Functions Below
             */

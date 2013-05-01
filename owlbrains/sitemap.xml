@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://owlbrains.com/owlbrainswp/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.5.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="April 25, 2013 6:54 pm" -->
+<!-- generated-on="April 30, 2013 9:13 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://owlbrains.com/</loc>
-		<lastmod>2013-04-23T16:58:43+00:00</lastmod>
+		<lastmod>2013-04-30T21:12:06+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://owlbrains.com/need-more-points/</loc>
-		<lastmod>2013-04-25T18:53:44+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>0.8</priority>
-	</url>
-	<url>
 		<loc>http://owlbrains.com/ask-a-question/</loc>
-		<lastmod>2013-04-25T18:50:22+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>http://owlbrains.com/get-some-points/</loc>
-		<lastmod>2013-04-25T17:47:20+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>http://owlbrains.com/not-registered/</loc>
-		<lastmod>2013-04-23T16:30:51+00:00</lastmod>
+		<lastmod>2013-04-30T17:01:38+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>http://owlbrains.com/thank-you/</loc>
-		<lastmod>2013-04-22T21:55:32+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>http://owlbrains.com/about/</loc>
-		<lastmod>2013-04-18T19:12:45+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>http://owlbrains.com/my-questions-answers/</loc>
-		<lastmod>2013-04-18T18:54:27+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>http://owlbrains.com/contact/</loc>
-		<lastmod>2013-04-12T05:12:41+00:00</lastmod>
+		<lastmod>2013-04-30T05:41:31+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>http://owlbrains.com/terms-of-service/</loc>
-		<lastmod>2013-04-11T19:01:38+00:00</lastmod>
+		<lastmod>2013-04-30T05:39:21+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>http://owlbrains.com/register/</loc>
-		<lastmod>2013-04-04T20:43:10+00:00</lastmod>
+		<lastmod>2013-04-30T05:38:40+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>http://owlbrains.com/not-registered/</loc>
+		<lastmod>2013-04-30T05:36:41+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>http://owlbrains.com/need-more-points/</loc>
+		<lastmod>2013-04-30T05:35:32+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>http://owlbrains.com/my-questions-answers/</loc>
+		<lastmod>2013-04-30T05:34:42+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>http://owlbrains.com/login/</loc>
-		<lastmod>2013-04-04T04:22:34+00:00</lastmod>
+		<lastmod>2013-04-30T05:34:07+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>http://owlbrains.com/get-some-points/</loc>
+		<lastmod>2013-04-30T05:33:32+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>http://owlbrains.com/contact/</loc>
+		<lastmod>2013-04-30T05:32:34+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>http://owlbrains.com/about/</loc>
+		<lastmod>2013-04-30T05:31:37+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.8</priority>
 	</url>
