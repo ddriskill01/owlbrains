@@ -72,12 +72,20 @@ function foundation_assets() {
 		// Load JavaScripts
         wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js');
 		wp_enqueue_script( 'foundation', get_template_directory_uri() . '/js/foundation.js');
+		wp_enqueue_script( 'top bar', get_template_directory_uri() . '/js/foundation.topbar.js');
 		wp_enqueue_script( 'modernizr', get_template_directory_uri().'/js/vendor/custom.modernizr.js', null, '2.1.0');
+        wp_enqueue_script( 'fancybox', get_template_directory_uri().'/js/fancybox/jquery.fancybox.pack.js', 'jquery');
+        wp_enqueue_script( 'fancybox functions', get_template_directory_uri().'/js/fancybox/functions.fancybox.js', 'fancybox');
+        
+        
+        
 		if ( is_singular() ) wp_enqueue_script( "comment-reply" );
 
 		// Load Stylesheets
 		wp_enqueue_style( 'normalize', get_template_directory_uri().'/css/normalize.css' );
 		wp_enqueue_style( 'foundation', get_template_directory_uri().'/css/foundation.min.css' );
+		wp_enqueue_style( 'awesome-font', get_template_directory_uri().'/css/font-awesome.min.css' );
+        wp_enqueue_style( 'fancybox-style', get_template_directory_uri().'/css/jquery.fancybox.css' );
 		wp_enqueue_style( 'app', get_stylesheet_uri(), array('foundation') );
 
 		// Load Google Fonts API
@@ -438,6 +446,9 @@ function foundation_title( $title, $sep ) {
 }
 
 add_filter( 'wp_title', 'foundation_title', 10, 2 );
+add_filter( 'widget_text', 'shortcode_unautop');
+add_filter( 'widget_text', 'do_shortcode');
+
 
 /**
  * Retrieve Shortcodes
@@ -449,5 +460,14 @@ $foundation_shortcodes = trailingslashit( get_template_directory() ) . 'inc/shor
 if (file_exists($foundation_shortcodes)) {
 	require( $foundation_shortcodes );
 }
+
+//menu item change a to add class for fancybox
+function add_menuclass($ulclass) {
+    return preg_replace('/<a rel="fancybox"/', '<a class="fancybox"', $ulclass, -1);
+}
+add_filter('wp_nav_menu','add_menuclass');
+
+
+
 
 ?>

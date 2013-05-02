@@ -25,11 +25,28 @@
 </div>
 
 <?php endif; ?>
- 
+ <?php wp_footer(); ?>
+<div id="login-box" style="display:none;">
+<p>
+<h3>Log In</h3>
+<?php echo do_shortcode('[wppb-login]'); ?>
+</p>
+</div>
+<div id="lost-pass-box" style="display:none;">
+<p>
+<h3>Lost Password</h3>
+<?php echo do_shortcode('[wppb-recover-password]'); ?>
+</p>
+</div>
+<div id="register-box" style="display:none;">
+<p>
+<h3>Owl Brains - Registration</h3>
+<?php echo do_shortcode('[wppb-register]'); ?>
+</p>
+</div>
 </footer>
 <!-- End Footer -->
 
-<?php wp_footer(); ?>
 
 </body>
 </html>
