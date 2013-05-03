@@ -20,10 +20,14 @@ $result = $wpdb->get_results( "SELECT * FROM $search_table WHERE (answered = 0) 
 <div>
 <form name ="adminForm" id="adminForm" action="http://owlbrains.com/owlbrainswp/wp-content/plugins/owlbrains-admin/adminf
 orm.php" method="post">
+<div id="costBox"></div>
+<div id="user_idBox"></div>
 <div id="questionBox"></div>
 
 <label for='answer'><h3>Answer</h3></label><textarea name="answer" id="answer" rows="10" cols="100"> </textarea>
-<input type="submit" value="Submit Answer">
+<p>
+<button type="submit" name="button" value="1">Submit Answer</button>
+<button type="submit" name="button" value="2">Refund Question</button></p>
 <table id="adminTable" name="adminTable" class="dataTable"> 
 <thead> 
 <tr> 
@@ -32,7 +36,8 @@ orm.php" method="post">
     <th>Grade</th> 
     <th>Subject</th> 
     <th>Type</th> 
-    <th>Time</th> 
+    <th>Time</th>
+ 	<th>User_id</th>
 </tr> 
 </thead> 
 <tbody> 
@@ -47,9 +52,13 @@ foreach($result as $row)
 echo $row->id;?>
 " onchange="displayQuestion()"></td> 
 	<td>
-<?php
-echo $row->cost;
-?>
+<input type="text" value="<?php
+echo $row->cost;?>
+" id="cost<?php
+echo $row->id;?>
+" name="cost<?php
+echo $row->id;?>
+">
 	</td> 
     <td>
 <?php
@@ -78,6 +87,15 @@ echo $row->id;?>
 echo $row->id;?>
 ">
 	</td>
+<td>
+<input type="text" value="<?php
+echo $row->usr_id;?>
+" id="user_id<?php
+echo $row->id;?>
+" name="user_id<?php
+echo $row->id;?>
+">
+	</td> 
 </tr> 
 
 <?php

@@ -27,16 +27,18 @@
 <?php endif; ?>
  <?php wp_footer(); ?>
 <div id="login-box" style="display:none;">
-<p>
-<h3>Log In</h3>
-<?php echo do_shortcode('[wppb-login]'); ?>
+<h3>Log In</h3><p>
+<a class="btn btn-large btn-primary" href="http://owlbrains.com/owlbrainswp/wp-login.php?loginFacebook=1&redirect=http://owlbrains.com/owlbrainswp" onclick="window.location = 'http://owlbrains.com/owlbrainswp/wp-login.php?loginFacebook=1&redirect='+window.location.href; return false;">
+  <i class="icon-facebook-sign icon-2x"></i> Connect</a>
 </p>
+<?php echo do_shortcode('[wppb-login]'); ?>
+
 </div>
 <div id="lost-pass-box" style="display:none;">
-<p>
+
 <h3>Lost Password</h3>
 <?php echo do_shortcode('[wppb-recover-password]'); ?>
-</p>
+
 </div>
 <div id="register-box" style="display:none;">
 <p>

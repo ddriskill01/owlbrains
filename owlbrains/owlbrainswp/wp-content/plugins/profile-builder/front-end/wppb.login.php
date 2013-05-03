@@ -146,11 +146,11 @@ function wppb_front_end_login( $atts ){
 			</p><!-- .form-submit -->
 			<?php
 				if ($display === true){
-					$siteURL=get_option('home_url').'/#lost-pass-box';
+					$siteURL=get_option('home_url').'#lost-pass-box';
 					$siteURL = apply_filters('wppb_pre_login_url_filter', $siteURL);
 					$loginFilterArray['loginURL'] = '
 						<p>
-							<a href="'.$siteURL.'" class="fancybox">'. __('Lost password?', 'profilebuilder').'</a>
+							<a href="'.$siteURL.'" class="fancybox2">'. __('Lost password?', 'profilebuilder').'</a>
 						</p>';
 					$loginFilterArray['loginURL'] = apply_filters('wppb_login_url', $loginFilterArray['loginURL'], $siteURL);
 					echo $loginFilterArray['loginURL'];
