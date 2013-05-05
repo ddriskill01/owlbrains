@@ -27,7 +27,7 @@
 <?php endif; ?>
  <?php wp_footer(); ?>
 <div id="login-box" style="display:none;">
-<h3>Log In</h3><p>
+<h3>Log In To Owl Brains</h3><p>
 <a class="btn btn-large btn-primary" href="http://owlbrains.com/owlbrainswp/wp-login.php?loginFacebook=1&redirect=http://owlbrains.com/owlbrainswp" onclick="window.location = 'http://owlbrains.com/owlbrainswp/wp-login.php?loginFacebook=1&redirect='+window.location.href; return false;">
   <i class="icon-facebook-sign icon-2x"></i> Connect</a>
 </p>
@@ -41,10 +41,20 @@
 
 </div>
 <div id="register-box" style="display:none;">
+<?php
+
+if ( is_user_logged_in() ){  // Already logged in 
+		echo "<h3>You Are Logged in!  You don't need another account.</h3>";
+             }
+else {
+?>
 <p>
 <h3>Owl Brains - Registration</h3>
 <?php echo do_shortcode('[wppb-register]'); ?>
 </p>
+<?php
+	}
+?>
 </div>
 </footer>
 <!-- End Footer -->

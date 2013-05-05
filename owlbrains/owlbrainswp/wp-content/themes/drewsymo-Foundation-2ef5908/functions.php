@@ -73,6 +73,7 @@ function foundation_assets() {
         wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js');
 		wp_enqueue_script( 'foundation', get_template_directory_uri() . '/js/foundation.js');
 		wp_enqueue_script( 'top bar', get_template_directory_uri() . '/js/foundation.topbar.js');
+        wp_enqueue_script( 'foundation forms', get_template_directory_uri() . '/js/foundation.forms.js');
 		wp_enqueue_script( 'modernizr', get_template_directory_uri().'/js/vendor/custom.modernizr.js', null, '2.1.0');
         wp_enqueue_script( 'fancybox', get_template_directory_uri().'/js/fancybox/jquery.fancybox.pack.js', 'jquery');
         wp_enqueue_script( 'fancybox functions', get_template_directory_uri().'/js/fancybox/functions.fancybox.js', 'fancybox');
@@ -440,7 +441,7 @@ function foundation_title( $title, $sep ) {
 
 	// Add a page number if necessary.
 	if ( $paged >= 2 || $page >= 2 )
-		$title = "$title $sep " . sprintf( __( 'Page %s', 'foundation' ), max( $paged, $page ) );
+		$title = "$title $sep  " . sprintf( __( 'Page %s', 'foundation' ), max( $paged, $page ) );
 
 	return $title;
 }
@@ -448,6 +449,7 @@ function foundation_title( $title, $sep ) {
 add_filter( 'wp_title', 'foundation_title', 10, 2 );
 add_filter( 'widget_text', 'shortcode_unautop');
 add_filter( 'widget_text', 'do_shortcode');
+
 
 
 /**

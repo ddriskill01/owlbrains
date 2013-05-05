@@ -36,9 +36,10 @@ function wppb_front_end_login( $atts ){
 		$wppb_user = get_userdata( $user_ID );
 		if($wppb_user->display_name == ''){ 
 			$wppb_user->display_name = $wppb_user->user_login;
+			
 		}
 		
-		$loginFilterArray['loginMessage1'] = '<p class="alert">'. sprintf(__('You are currently logged in as %1$s. %2$s', 'profilebuilder'), '<a href="'.$authorPostsUrl = get_author_posts_url( $wppb_user->ID ).'" title="'.$wppb_user->display_name.'">'.$wppb_user->display_name.'</a>', '<a href="'.wp_logout_url( $redirectTo = home_url('/') ).'" title="'. __('Log out of this account', 'profilebuilder').'">'. __('Log out', 'profilebuilder').' &raquo;</a>') . '</p><!-- .alert-->';
+		$loginFilterArray['loginMessage1'] = '<p class="alert">'. sprintf(__('You are currently logged in ', 'profilebuilder'), '<a href="'.$authorPostsUrl = get_author_posts_url( $wppb_user->ID ).'" title="'.$wppb_user->display_name.'">'.$wppb_user->display_name.'</a>', '<a href="'.wp_logout_url( $redirectTo = home_url('/') ).'" title="'. __('Log out of this account', 'profilebuilder').'">'. __('Log out', 'profilebuilder').' &raquo;</a>') . '</p><!-- .alert-->';
 		echo $loginFilterArray['loginMessage1'] = apply_filters('wppb_login_login_message1', $loginFilterArray['loginMessage1'], $wppb_user->ID, $wppb_user->display_name);	
 	
 	}elseif ( isset($wppb_login->ID) ){ // Successful login
@@ -52,6 +53,7 @@ function wppb_front_end_login( $atts ){
 		if (isset($_POST['button']) && isset($_POST['formName']) ){
 			if ($_POST['formName'] == 'login'){
 				if ($_POST['button'] == 'page'){
+					//edit this wppb_curpageurl()
 					$permaLnk2 = wppb_curpageurl();
 				
 					$wppb_addon_settings = get_option('wppb_addon_settings'); //fetch the descriptions array
@@ -69,6 +71,7 @@ function wppb_front_end_login( $atts ){
 					echo $loginFilterArray['redirectMessage'] = apply_filters('wppb_login_redirect_message', $loginFilterArray['redirectMessage'], $permaLnk2);
 
 				}elseif($_POST['button'] == 'widget'){
+					
 					$permaLnk2 = wppb_curpageurl();
 					if ($redirect != '')
 						$permaLnk2 = trim($redirect);
@@ -107,7 +110,7 @@ function wppb_front_end_login( $atts ){
 		/* use this action hook to add extra content before the login form. */
 		do_action( 'wppb_before_login' );?>
 		
-		<form action="<?php wppb_curpageurl(); ?>" method="post" class="sign-in" name="loginForm">
+		<form action="http://owlbrains.com/login" method="post" class="sign-in" name="loginForm">
 		<?php
 			if (isset($_POST['user-name']))
 				$userName = esc_html( $_POST['user-name'] );

@@ -30,14 +30,22 @@ else if ($total_points >= $cost)
 	{
 	//points are valid -- do more stuff
 
-	$subject = "Your Question Has Been Received - Owl Brains";
+	$message_subject = "Your Question Has Been Received - Owl Brains";
 	$message = "We we answer it shortly! \r\n";
 	$to_add = get_user_email($usr_id);
 
 	post_to_obquestions($timestamp);
 	log_points2($cost);
 	subtract_points($total_points, $cost, $usr_id);
-	send_notification($subject, $message, $to_add);
+	send_notification($message_subject, $message, $to_add);
+
+	$message_subject = "A User Has Submitted A Question";
+	$message = $question;
+	$to_add = "aswens0276@gmail.com";
+
+	send_notification($message_subject, $message, $to_add);
+
+
 
 	}
 

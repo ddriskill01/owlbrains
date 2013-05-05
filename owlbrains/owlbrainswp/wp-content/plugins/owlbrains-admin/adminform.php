@@ -15,19 +15,19 @@ date_default_timezone_set('America/Los_Angeles');
 	
 //check if button is pressed for submit answer or refund question
 if ($button == 1) {
-		$subject = "Your Question Has Been Answered";
+		$subject = "Your Question Has Been Answered! - Owl Brains";
 		$message = "The answer to your question: \r\n";
 		$message .= $question . "\r\n";
 		$message .= "is: \r\n";
-		$message .= $answer; 
+		$message .= $answer . "\r\n"; 
 		update_answer($answer, $id, 1);
 		$to_add = get_user_email($user_id);
 		send_notification($subject, $message, $to_add);
 	}
 //refund question
 else if ($button == 2) {
-		$answer = "Question Refunded";
-		$subject = "Your Points have Been Refunded";
+		$answer = "Question Has Been Refunded";
+		$subject = "Your Points have Been Refunded - Owl Brains";
 		$message = "Unfortunately we were unable to answer this question.  All the points for this question have been refunded to your account."; 
 		refund_points($cost);
 		update_answer($answer, $id, 2);
@@ -38,7 +38,11 @@ else if ($button == 2) {
 //refund points spent on a question
 	function refund_points($cost) 
 		{
-			
+
+			cp_alterPoints(cp_currentUser(), $cost);
+			//add to log
+			//still not logging the description
+			cp_log("Points Refunded", cp_currentUser(), $cost, 2);
 		}
 
 
@@ -77,7 +81,7 @@ function get_user_email($user_id)
 	global $wpdb;
 	/* wpdb class should not be called directly.global $wpdb variable is an instantiation of the class already set up to talk to the WordPress database */ 
 	$search_table = $wpdb->prefix . "users";
-	//$wpdb->show_errors(); 
+	$wpdb->show_errors(); 
 	$result = $wpdb->get_results( "SELECT * FROM $search_table WHERE (ID = $user_id) ");
 
 	foreach($result as $row)
@@ -99,9 +103,12 @@ function send_notification($subject, $message, $to_add)
 		$headers .= "Return-Path: $from_add\r\n";
 		$headers .= "X-Mailer: PHP \r\n";
 
+		$message .= "Thank you for using Owl Brains.  When you have ";
+		$message .= "another question we hope you will use Owl Brains again.";
+
 		//this line send the email
 		mail($to_add,$subject,$message,$headers); 
 	
-	header("location:http://owlbrains.com/thank-you");
+	header("location:http://owlbrains.com/owlbrainswp/wp-admin/options-general.php?page=Owl_Brains");
 }
 ?>
